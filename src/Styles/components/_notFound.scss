@@ -1,0 +1,43 @@
+.notFound{
+    height: 100%;
+}
+.notFound-error{
+    height: 100%;
+    .container-of-notFound{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 6%;
+        min-height: 100%;
+        margin-top: 5%;
+        display: flex;
+       
+        h1{
+            font-size: 288px;
+        }
+        p{
+            font-size: 36px;
+        }
+        a{
+            margin-top: 4%;
+            width: auto;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (max-width:430px){
+    .notFound-error{
+        height: auto;
+        .container-of-notFound{
+            margin-top: 175px;
+            margin-bottom: 175px;
+            height: auto;
+            h1{
+                font-size: 96px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+}

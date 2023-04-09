@@ -1,0 +1,42 @@
+.footer{
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position:relative;
+    background-color: black;
+    height: 210px ;
+    text-align: center;
+}
+
+.logoFooter{
+    margin: 1%;
+    img{
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (max-width:430px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        height: 210px ;
+        width: 100%;
+        color: white;
+        justify-content: center;
+        position: relative;
+        bottom: 0px;
+        text-align: center;
+    }
+    
+    .logoFooter{
+       
+        img{
+            margin-bottom: 2%;
+        }
+        margin: 1%;
+    }
+}
