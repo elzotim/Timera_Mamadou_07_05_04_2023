@@ -5,7 +5,7 @@ class BackgroundHome extends Component {
     render(){
         return(
             <div className="backghome">
-                <div className ="img-back-home">
+                <div className ="img-back">
                     <img src={backHome} alt="Background de la page home" />
                 </div>
                 <div className="slogan-home">
