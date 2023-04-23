@@ -1,0 +1,116 @@
+$color-secondary : #FF6060;
+$color-tertiary : #F7F7F7;
+
+$color-primary : #fff;
+.collapse{
+    background-color: $color-tertiary;
+    max-width: 1100px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0 auto;
+    &_title{
+        
+        background-color: $color-secondary;
+        color: $color-primary;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: clamp(13px, 2vw, 18px);
+        padding: 10px 15px;
+        cursor: pointer;
+        .fleche{
+            transition: all 0.2s ease-in-out;
+            @media screen and (max-width: 1230px){
+                width: 12px;     
+            }
+        }
+        .fleche_up{
+            transform: rotate(0deg);
+        }
+        .fleche_down{
+            transform: rotate(180deg);
+        }
+    }
+    &_content{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        letter-spacing: 1px;
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+        padding: 10px;
+        letter-spacing: 1px;
+        font-size: clamp(12px, 2vw, 16px);
+        color: $color-secondary;
+        transition: visibility 0.5s ease-in-out,
+                    opacity 0.5s ease-in-out,
+                    height 0.2s ease-in-out;
+    }
+    &_content_hidden{
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+    }
+}
+
+.accomodation_collapse{
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    margin: 30px auto;
+    width: 95%;
+    &_item{
+        width: 50%;
+    }
+    @media screen and (max-width: 650px){
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px auto;
+        &_item{
+            width: 100%;
+        }    
+    }
+}
+//Carousell 
+
+
+.carousel{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 415px;
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    width: 95%;
+    margin: 43px auto;
+    @media screen and (max-width: 650px){
+        height: 200px;  
+        margin: 20px auto;   
+    }
+    &_fleche{
+        position: absolute;
+        top: 50%;
+        height: 15%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        &:active{
+            transform: translateY(-50%) scale(0.9);
+        }
+        &_right{
+            right: 25px;
+        }
+        &_left{
+            left: 25px;
+        }
+    }
+    .slideCount{
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $color-primary;
+        font-weight: 500;
+        font-size: clamp(14px, 2vw, 18px);
+    }
+}

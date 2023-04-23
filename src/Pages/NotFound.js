@@ -1,7 +1,7 @@
 import {Component} from 'react';
 import Footer from '../Composentes/Footer';
-import Logo from '../Composentes/logo';
-import Navigation from '../Composentes/Navigation';
+import Logo from '../Composentes/Header/logo';
+import Navigation from '../Composentes/Header/Navigation';
 import { NavLink } from "react-router-dom"
 class NotFound extends Component {
     render(){

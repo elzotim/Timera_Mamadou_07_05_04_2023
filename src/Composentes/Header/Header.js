@@ -1,6 +1,6 @@
 import {Component} from 'react';
-import Logo from '../logo';
-import Navigation from '../Navigation';
+import Logo from './logo';
+import Navigation from './Navigation';
 
 class Home extends Component {
     render(){
