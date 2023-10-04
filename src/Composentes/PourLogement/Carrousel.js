@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 export default function Slider({imageSlider}) {
 
-    const [currentIndex, setCurrentIndex] = useState(0)
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = () => {
         setCurrentIndex(currentIndex + 1)

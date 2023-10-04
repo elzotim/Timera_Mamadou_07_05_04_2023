@@ -9,12 +9,14 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path = '/*' element = {<NotFound />}/>
+          
           <Route path="/home" exact element={<Home />}/>
           <Route path="/"  element={<Home />}/>
           <Route path="/a-propos"element={<About/>}/>
-          <Route  exact path="/logement/:id" element= {<Logement/>}
-        />  
+          <Route  exact path="/logement/:id" element= {<Logement/>}/>
+          <Route   path ="*" element= {<NotFound/>}/>
+          <Route element= {<NotFound/>}/>
+        
         </Routes>
       </BrowserRouter>
     </div>

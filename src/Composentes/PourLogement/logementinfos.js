@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useParams,NavLink  } from "react-router-dom";
+import { useParams,NavLink ,useNavigate } from "react-router-dom";
 import datas from '../data/data'
 import Slider from "./Carrousel"
 import Collapse from './collapse';
@@ -15,9 +15,9 @@ export default function Accomodation() {
 	const housing = datas.filter(data=> data.id === id) 
 	console.log(id);
 	console.log( housing);
-	
-	const rating = dataCurrentAccomodation[0].rating;
+	const Navigate = useNavigate();
 	const name = dataCurrentAccomodation[0].host.name.split(' '); 
+	const rating = dataCurrentAccomodation[0].rating;
 	const description  = dataCurrentAccomodation[0].description;
 	const equipments = dataCurrentAccomodation[0].equipments;
 		useEffect(() => {
@@ -25,12 +25,11 @@ export default function Accomodation() {
 			setImageSlider(dataCurrentAccomodation[0].pictures);
 		}, [idAccomodation]);
 		
-	if (dataCurrentAccomodation.length===0 && dataCurrentAccomodation[0].host === undefined ){ 
-        return <section className="error_page">
-            <p className="error_page_subtitle">Malheureusement, le logement que vous recherchez n'est plus disponible ou n'existe pas.</p>
-            <NavLink title='Accueil' end to='/home' className="error_page_link">Retourner sur la page d'accueil</NavLink> 
-        </section>
-    } 
+	
+	if (id=== undefined ){
+		return
+   <Navigate replace to ='/PageErreur'/> 
+	}
 	
 	return (
 		<>
