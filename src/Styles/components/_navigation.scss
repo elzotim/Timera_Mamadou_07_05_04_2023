@@ -12,11 +12,14 @@ a{
     height: 34px;
     width: 100px;
     color: $main-color;
+    
+}
+.navigation a :target{
+    text-decoration: underline;
+     color: aqua;
 }
 
-.nav-active{
-    text-decoration: underline;
-}
+
 
 @media screen and (max-width:430px){
     .navigation{

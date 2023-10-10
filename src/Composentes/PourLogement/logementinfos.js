@@ -40,21 +40,21 @@ export default function Accomodation() {
 					<div className="accomodation_content_infos">
 						<h1>{dataCurrentAccomodation[0].title}</h1>
 						<p>{dataCurrentAccomodation[0].location}</p>
-						<div>
+						<div className ="accomodation_content_infos_tags-logement">
 							{dataCurrentAccomodation[0].tags.map((tag, index) => {
 								return (
-									<button key={index}>{tag}</button>
+									<button className="tags"  key={index}>{tag}</button>
 								)
 							})}
 						</div>
 					</div>
 					<div className="accomodation_content_host">
-						<div>
+						<div className="accomodation_content_host_0">
 							<div className='accomodation_content_host_name'>
 								<span>{name[0]}</span>
 								<span>{name[1]}</span>
 							</div>
-							<img src={dataCurrentAccomodation[0].host.picture} alt="host of this accomodation" />
+							<img src={dataCurrentAccomodation[0].host.picture} alt="host accomodation" />
 						</div>
 							
 						<div className="accomodation_content_host_stars">

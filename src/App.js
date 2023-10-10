@@ -16,7 +16,6 @@ function App() {
           <Route  exact path="/logement/:id" element= {<Logement/>}/>
           <Route   path ="*" element= {<NotFound/>}/>
           <Route element= {<NotFound/>}/>
-        
         </Routes>
       </BrowserRouter>
     </div>

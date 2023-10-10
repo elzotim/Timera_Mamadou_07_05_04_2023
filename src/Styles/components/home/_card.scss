@@ -38,8 +38,10 @@
 
 
 @media screen and (max-width:426px){
-   
-}
+    .appartement{
+        &-window{   
+   margin: 0 5%
+}}};
 .gallery_card{
     position: relative;
     width: 30%;
