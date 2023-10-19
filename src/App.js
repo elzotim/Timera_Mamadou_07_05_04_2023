@@ -16,6 +16,7 @@ function App() {
           <Route  exact path="/logement/:id" element= {<Logement/>}/>
           <Route   path ="*" element= {<NotFound/>}/>
           <Route element= {<NotFound/>}/>
+          <Route path="/404" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>

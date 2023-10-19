@@ -1,15 +1,17 @@
-import {Component} from 'react';
+import { Component } from 'react';
 import Footer from '../Composentes/Footer'
-import Header from '../Composentes/Header/Header';
+import Logo from '../Composentes/Header/logo'
+import Navigation from '../Composentes/Header/Navigation'
 import BackHome from '../Composentes/PourHomepage/Back-home';
 import GridHomePage from '../Composentes/PourHomepage/GridHomePage'
 class Home extends Component {
-    render(){
-        return(
-            <div className="home">
-                 <Header/>
+    render() {
+        return (
+            <div className="home1">
+                <Logo />
+                <Navigation />
                 <BackHome />
-                <GridHomePage/>
+                <GridHomePage />
                 <Footer />
             </div>
         )

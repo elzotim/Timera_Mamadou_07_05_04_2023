@@ -10,9 +10,9 @@
         min-height: 100%;
         margin-top: 5%;
         display: flex;
-       
         h1{
             font-size: 288px;
+            
         }
         p{
             font-size: 36px;
@@ -32,11 +32,15 @@
             margin-top: 175px;
             margin-bottom: 175px;
             height: auto;
+            width: 90% ;
+            background-color: aqua;
+            text-align: center;
             h1{
                 font-size: 96px;
             }
             p{
                 font-size: 18px;
+                margin: 0 10px;
             }
         }
     }

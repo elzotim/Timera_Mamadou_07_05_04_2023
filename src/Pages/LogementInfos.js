@@ -1,11 +1,13 @@
 import React from 'react'
-import Header from '../Composentes/Header/Header'
+import Logo from '../Composentes/Header/logo'
+import Navigation from '../Composentes/Header/Navigation'
 import Footer from '../Composentes/Footer'
 import LogementInfons from '../Composentes/PourLogement/logementinfos'
 function LogementInfos() {
   return (
     <div>
-      <Header/>
+      <Logo />
+      <Navigation />
       <LogementInfons/>
       <Footer/>
     </div>

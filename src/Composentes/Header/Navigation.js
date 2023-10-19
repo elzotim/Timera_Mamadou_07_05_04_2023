@@ -5,10 +5,10 @@ class Navigation extends Component {
     render(){
         return(
             <div className="navigation">
-                <NavLink  to ="/home" >
+                <NavLink  style={({ isActive }) => ({ textdecoration: isActive ? 'underline' : 'none' })} to ="/home" >
                     Accueil
                 </NavLink>
-                <NavLink  to ="/a-propos" >
+                <NavLink activeClassName="highlighted" exact={true} to ="/a-propos" >
                     A propos
                 </NavLink>
             </div>

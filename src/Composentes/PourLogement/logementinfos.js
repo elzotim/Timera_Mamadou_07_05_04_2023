@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useParams,NavLink ,useNavigate } from "react-router-dom";
+import { useParams,Navigate } from "react-router-dom";
 import datas from '../data/data'
 import Slider from "./Carrousel"
 import Collapse from './collapse';
@@ -10,30 +10,29 @@ export default function Accomodation() {
 	const [imageSlider, setImageSlider] = useState([]);
 
 	const idAccomodation = useParams('id').id;
+	const { id } = useParams();
 	const dataCurrentAccomodation = datas.filter(data => data.id === idAccomodation);
-	const { id } = useParams()
-	const housing = datas.filter(data=> data.id === id) 
 	console.log(id);
-	console.log( housing);
-	const Navigate = useNavigate();
+	console.log( dataCurrentAccomodation);
+	
 	const name = dataCurrentAccomodation[0].host.name.split(' '); 
 	const rating = dataCurrentAccomodation[0].rating;
 	const description  = dataCurrentAccomodation[0].description;
 	const equipments = dataCurrentAccomodation[0].equipments;
-		useEffect(() => {
+		useEffect((dataCurrentAccomodation) => {
 			
 			setImageSlider(dataCurrentAccomodation[0].pictures);
 		}, [idAccomodation]);
 		
 	
-	if (id=== undefined ){
-		return
-   <Navigate replace to ='/PageErreur'/> 
+	if (dataCurrentAccomodation.length===0 ){
+		console.log("errreir");
+		return <Navigate to="/404" replace />;
+		
 	}
 	
 	return (
 		<>
-		
 			<Slider imageSlider={imageSlider}/>
 			<main className="accomodation">
 				<div className="accomodation_content">
