@@ -2,6 +2,7 @@ import flecheRight from '../../public/media/fleche-right.png'
 import flecheLeft from '../../public/media/fleche-left.png'
 import { useState } from 'react'
 
+
 export default function Slider({imageSlider}) {
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -37,5 +38,6 @@ export default function Slider({imageSlider}) {
                 </>
             } 
         </section>
+      
     )
 }
