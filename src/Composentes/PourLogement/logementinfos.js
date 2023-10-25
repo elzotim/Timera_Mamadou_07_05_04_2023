@@ -10,7 +10,7 @@ import redStar from '../../public/media/redStar.png';
 export default function Accomodation() {
 	const [imageSlider, setImageSlider] = useState([]);
 	const idAccomodation    		= useParams();
-	const dataCurrentAccomodation 	= datas.filter(data => data.id == idAccomodation.id);
+	const dataCurrentAccomodation 	= datas.filter(data => data.id === idAccomodation.id);
 	let name 		= "";
 	let rating 		= "";
 	let description = "";
@@ -32,7 +32,6 @@ export default function Accomodation() {
 		return (
 			<>
 				<Slider imageSlider={imageSlider}/>
-
 				<main className="accomodation">
 					<div className="accomodation_content">
 						<div className="accomodation_content_infos">
@@ -49,8 +48,8 @@ export default function Accomodation() {
 						<div className="accomodation_content_host">
 							<div className="accomodation_content_host_0">
 								<div className='accomodation_content_host_name'>
-									<span>{name[0]}</span>
-									<span>{name[1]}</span>
+									<span className="name">{name[0]}</span> <br/>
+									<span className="name">{name[1]}</span>
 								</div>
 								<img src={dataCurrentAccomodation[0].host.picture} alt="host accomodation" />
 							</div>
