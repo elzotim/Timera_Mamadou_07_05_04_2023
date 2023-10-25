@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../Composentes/Header/Header'
 import Footer from '../Composentes/Footer'
-import LogementInfons from '../Composentes/PourLogement/logementinfos'
+import LogementInfons from '../Composentes/FicheLogement/FicheLogement'
 function LogementInfos() {
   return (
     <div>
@@ -11,5 +11,6 @@ function LogementInfos() {
     </div>
   )
 }
+
 
 export default LogementInfos

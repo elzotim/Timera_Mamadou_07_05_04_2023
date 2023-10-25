@@ -25,14 +25,7 @@ body{
     
 }
 
-.home1{
-    
-    
-    @media screen and (max-width:426px){
-         
-       margin: 0 5%
-    }
-};
+
 
 
 li{
@@ -53,10 +46,11 @@ a:target{
     
 }
 .home{
-    width: 1240px;
-height: 68px;
-margin-top: 40px;
-margin-left: 100px;
-margin-right: 100px;
+    height: 36px;
+    margin: 20px AUTO AUTO AUTO;
+    /* margin-left: 100px; */
+    /* margin-right: 100px; */
+    width: 90%;
+    
 }
 

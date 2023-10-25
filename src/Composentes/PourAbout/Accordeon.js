@@ -12,8 +12,8 @@ export default class Accordeon extends Component {
 
     renderDescription(){
         if(this.state.isOpened){
-            return <div>
-                <p className ="description-text-accordeon">{this.props.description}</p>
+            return <div className='description-text-accordeon'>
+                <p className ="description-text-accordeons">{this.props.description}</p>
             </div>
         }
         return null;
