@@ -6,12 +6,14 @@ import GridHomePage from '../Composentes/PourHomepage/GridHomePage'
 class Home extends Component {
     render() {
         return (
-            <div className="home1">
+             <>
+                 <div className="home1">
                 <Header />
                 <BackHome />
                 <GridHomePage />
+                </div>
                 <Footer />
-            </div>
+            </>
         )
     }
 }

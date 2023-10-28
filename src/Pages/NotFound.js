@@ -1,14 +1,12 @@
 import { Component } from 'react';
 import Footer from '../Composentes/Footer';
-import Logo from '../Composentes/Header/logo'
-import Navigation from '../Composentes/Header/Navigation'
+import Header from '../Composentes/Header/Header'
 import { NavLink } from "react-router-dom"
 class NotFound extends Component {
     render() {
         return (
             <div className="notFound">
-                <Logo />
-                <Navigation />
+                <Header/>
                 <div className="notFound-error">
                     <div className="container-of-notFound">
                         <h1>404</h1>

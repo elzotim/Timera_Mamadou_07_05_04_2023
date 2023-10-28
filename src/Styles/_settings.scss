@@ -45,12 +45,12 @@ a:target{
     text-decoration: underline;
     
 }
-.home{
-    height: 36px;
-    margin: 20px AUTO AUTO AUTO;
-    /* margin-left: 100px; */
-    /* margin-right: 100px; */
+.home1,.about,.infosloge,.notFound{
+    display: inline-block;
     width: 90%;
-    
-}
+    margin-top: 30px;
 
+
+@media screen and (max-width:430px){
+    width: 86%;
+};}

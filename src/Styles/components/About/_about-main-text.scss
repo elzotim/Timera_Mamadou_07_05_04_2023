@@ -10,14 +10,15 @@
         width: 75%;
         .about-Details{
             background-color: $main-color;
-            margin-top: 4%;
+            margin-top: 2%;
             display: flex;
             padding-left: 2%;
             padding-right: 2%;
-            height: 47px;
+            height: 2.25rem;
             align-items: center;
             border-radius: 5px; 
             justify-content: space-between;
+            border-radius: 5px;
             p{
                 font-size: larger;
                 color: white;
@@ -44,9 +45,8 @@
 @media screen and (max-width:426px){
     .aboutMainText{
         height: auto;
-        margin: 0 5%;
         .wrapper-about{
-            width:96%;
+            width:100%;
             height: auto;
             margin-bottom: 66px;
             .about-Details{

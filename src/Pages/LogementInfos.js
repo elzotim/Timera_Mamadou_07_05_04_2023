@@ -4,11 +4,13 @@ import Footer from '../Composentes/Footer'
 import LogementInfons from '../Composentes/PourLogement/logementinfos'
 function LogementInfos() {
   return (
-    <div>
+    <>
+    <div className="infosloge">
       <Header />
       <LogementInfons/>
+      </div>
       <Footer/>
-    </div>
+    </>
   )
 }
 

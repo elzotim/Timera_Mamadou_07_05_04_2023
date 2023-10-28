@@ -30,7 +30,7 @@ export default function Accomodation() {
 		return <Navigate to="/404" replace />
 	}else{
 		return (
-			<>
+			<div >
 				<Slider imageSlider={imageSlider}/>
 				<main className="accomodation">
 					<div className="accomodation_content">
@@ -48,8 +48,7 @@ export default function Accomodation() {
 						<div className="accomodation_content_host">
 							<div className="accomodation_content_host_0">
 								<div className='accomodation_content_host_name'>
-									<span className="name">{name[0]}</span> <br/>
-									<span className="name">{name[1]}</span>
+									<p className="name">{name[0]}     { name[1]}</p>
 								</div>
 								<img src={dataCurrentAccomodation[0].host.picture} alt="host accomodation" />
 							</div>
@@ -74,7 +73,7 @@ export default function Accomodation() {
 					</div>
 				</main>
 				
-			</>
+			</div>
 		)
 	}
 

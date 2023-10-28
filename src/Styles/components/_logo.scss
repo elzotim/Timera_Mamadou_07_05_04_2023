@@ -2,13 +2,24 @@
     position: absolute;  
     width: 210.32px;
     height: 68px;
-    margin-left: 10px;
     a{
         img{
-            margin-left: 20px;
-        }}
+            height: 4.25rem;
+    width: 13.15rem;
 }
+        }}
 
+        @media screen and (max-width:450px){
+            .logo{
+                position: absolute;  
+                width: 210.32px;
+                height: 68px;
+                a{
+                    justify-content: flex-start;
+                    img{
+                        height: auto;
+                            width: auto;
+            }}}};
     
    
  
