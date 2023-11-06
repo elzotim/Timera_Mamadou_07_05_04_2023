@@ -42,17 +42,22 @@ $color-primary : #fff;
         display: flex;
         flex-direction: column;
         gap: 5px;
+        text-align: start;
         letter-spacing: 1px;
         visibility: visible;
         opacity: 1;
         height: auto;
-        padding: 20px 0 10px 0;
+        padding: 20px 10px 10px 20px;
         letter-spacing: 1px;
         font-size: clamp(12px, 2vw, 16px);
         color: $color-secondary;
         transition: visibility 0.5s ease-in-out,
             opacity 0.5s ease-in-out,
             height 0.2s ease-in-out;
+            @media screen and (max-width: 650px) {
+                padding: 20px 10px 10px 10px;
+            }
+
     }
 
     &_content_hidden {
@@ -140,6 +145,7 @@ $color-primary : #fff;
                 flex-wrap: wrap;
                 gap: .63rem;
                 margin-top: 1.25rem;
+
                 .tags {
                     display: inline-block;
                     background-color: $color-secondary;
@@ -153,17 +159,23 @@ $color-primary : #fff;
                     transition: all 0.5s;
                     cursor: pointer;
                     margin: 5px;
-                    @media screen and (max-width:430px){
+
+                    @media screen and (max-width:430px) {
                         padding: .3rem 1.31rem 1.35rem;
-                }}
+                    }
+                }
             }
         }
+
         ;
+
         &_host {
             &_0 {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: flex-end;
+                gap: 10px;
+
                 img {
                     clip-path: ellipse(50% 50%);
                     height: 3.25rem;
@@ -177,7 +189,8 @@ $color-primary : #fff;
                 display: flex;
                 margin-top: 4px;
                 justify-content: space-between;
-                img{
+
+                img {
                     font-size: 1.5rem;
                 }
             }
@@ -185,6 +198,10 @@ $color-primary : #fff;
             &_name {
                 display: flex;
                 flex-direction: column;
+
+                p {
+                    width: min-content;
+                }
 
             }
 
@@ -246,8 +263,7 @@ $color-primary : #fff;
                 flex-direction: row-reverse;
                 display: flex;
                 justify-content: space-between;
-                width:100%
-
+                width: 100%
             }
 
             &_tags-logement {

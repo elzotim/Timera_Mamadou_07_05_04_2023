@@ -11,6 +11,4 @@ function LogementInfos() {
     </div>
   )
 }
-
-
 export default LogementInfos

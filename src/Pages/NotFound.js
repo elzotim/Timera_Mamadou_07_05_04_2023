@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom"
 class NotFound extends Component {
     render() {
         return (
+            <>
             <div className="notFound">
                 <Header/>
                 <div className="notFound-error">
@@ -14,8 +15,10 @@ class NotFound extends Component {
                         <NavLink exact to="/home">Retournez sur la page d'accueil </NavLink>
                     </div>
                 </div>
+                </div>
                 <Footer />
-            </div>
+            
+            </>
         )
     }
 }

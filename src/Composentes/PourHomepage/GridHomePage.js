@@ -1,15 +1,9 @@
 import {Component} from 'react';
 import Card from './Card';
 import datas from '../data/data'
-class GridHomePage extends Component {
-    
-    
-  
-           
-      
+class GridHomePage extends Component {  
     render() {
       
-        
         return (
             <main className='logements'>
                 <div className ="logement-list">
@@ -28,7 +22,4 @@ class GridHomePage extends Component {
           );
         }
     }
-
-
-
 export default GridHomePage;

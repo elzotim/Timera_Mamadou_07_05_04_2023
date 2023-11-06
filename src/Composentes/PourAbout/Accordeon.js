@@ -18,8 +18,6 @@ export default class Accordeon extends Component {
         }
         return null;
     }
-
-
     render(){
         return <div className="accordeon">
         <div className={"about-Details"} onClick={() => this.setState({ isOpened: !this.state.isOpened })}>
