@@ -8,7 +8,7 @@ class Navigation extends Component {
                 <NavLink  style={({ isActive }) => ({ textdecoration: isActive ? 'underline' : 'none' })} to ="/home" >
                     Accueil
                 </NavLink>
-                <NavLink activeClassName="highlighted" exact={true} to ="/a-propos" >
+                <NavLink   to ="/a-propos" >
                     A propos
                 </NavLink>
             </div>
